@@ -1,0 +1,4 @@
+#!/bin/sh
+
+dpkg-divert --add --rename --divert /etc/X11/xdm/Xsetup.orig /etc/X11/xdm/Xsetup
+dpkg-divert --add --rename --divert /etc/X11/xdm/Xresources.orig /etc/X11/xdm/Xresources

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+dpkg-divert --rename --remove /etc/X11/xdm/Xsetup
+dpkg-divert --rename --remove /etc/X11/xdm/Xresources
