@@ -1,0 +1,12 @@
+Source: sagitta-xdm-conf
+Maintainer: Jeremi Gosney <jgosney@stricture-group.com> 
+Section: misc
+Priority: important
+Standards-Version: 3.9.2
+Build-Depends: make
+
+Package: sagitta-xdm-conf
+Architecture: amd64
+Depends: ${misc:Depends}, xdm, feh, od6config
+Description: xdm configuration for AMD-based compute nodes
+ xdm configuration for AMD-based compute nodes
