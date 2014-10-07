@@ -1,3 +1,9 @@
+sagitta-xdm-conf (1.0.0-1sagitta1) precise; urgency=low
+
+  * add xdm init script w/ initctl 
+
+ -- epixoip <epixoip@token>  Tue, 07 Oct 2014 07:28:12 -0700
+
 sagitta-xdm-conf (1.0) UNRELEASED; urgency=low
 
   * Initial release.
