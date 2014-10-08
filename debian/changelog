@@ -1,3 +1,10 @@
+sagitta-xdm-conf (1.0.0-2sagitta1) precise; urgency=low
+
+  * change od6config defaults
+  * re/start agent when x11 starts
+
+ -- epixoip <epixoip@token>  Wed, 08 Oct 2014 01:57:51 -0700
+
 sagitta-xdm-conf (1.0.0-1sagitta1) precise; urgency=low
 
   * add xdm init script w/ initctl 
