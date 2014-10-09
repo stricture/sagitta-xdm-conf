@@ -1,3 +1,9 @@
+sagitta-xdm-conf (1.0.1-1sagitta1) precise; urgency=low
+
+  * fix dpkg-divert & initctl 
+
+ -- epixoip <epixoip@token>  Thu, 09 Oct 2014 08:41:29 -0700
+
 sagitta-xdm-conf (1.0.0-2sagitta1) precise; urgency=low
 
   * change od6config defaults

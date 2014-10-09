@@ -69,7 +69,7 @@ case "$1" in
       log_daemon_msg "Starting X display manager" "xdm"
       start-stop-daemon --start --quiet $SSD_START_ARGS \
         || log_progress_msg "already running"
-      initctl emit xdm-started
+      initctl emit xdm-started &
       log_end_msg 0
     fi
   ;;
