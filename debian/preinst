@@ -2,9 +2,9 @@
 
 
 if [ "$1" != upgrade ]; then
-    dpkg-divert --add --package sagitta-xdm-conf --rename --divert /etc/init.d/xdm.disrib /etc/init.d/xdm
-    dpkg-divert --add --package sagitta-xdm-conf --rename --divert /etc/X11/xdm/Xsetup.disrib /etc/X11/xdm/Xsetup
-    dpkg-divert --add --package sagitta-xdm-conf --rename --divert /etc/X11/xdm/Xresources.disrib /etc/X11/xdm/Xresources
+    dpkg-divert --add --package sagitta-xdm-conf --rename --divert /etc/init.d/xdm.distrib /etc/init.d/xdm
+    dpkg-divert --add --package sagitta-xdm-conf --rename --divert /etc/X11/xdm/Xsetup.distrib /etc/X11/xdm/Xsetup
+    dpkg-divert --add --package sagitta-xdm-conf --rename --divert /etc/X11/xdm/Xresources.distrib /etc/X11/xdm/Xresources
 fi
 
 exit 0

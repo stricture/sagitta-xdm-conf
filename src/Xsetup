@@ -5,12 +5,20 @@
 
 export PATH=/bin:/usr/bin
 export HOME=/root
+export DISPLAY=:0
 
 xset -dpms
 xset s off
 xhost +
 
-od6config --set core=975,mem=1250,power=25,temp=95,fan=100
+if test -x /usr/bin/od6config; then
+	od6config --set core=975,mem=1250,power=25,temp=95,fan=100
+elif test -x /usr/bin/nvidia-settings; then
+	nvidia-settings -a GPUPowerMizerMode=1 \
+		        -a GPUFanControlState=1 \
+		        -a GPUCurrentFanSpeed=90 \
+		        -a GPUGraphicsClockOffset[3]=100
+fi
 
 feh --bg-scale /usr/share/images/xdm-background.png
 

@@ -7,6 +7,7 @@ Build-Depends: make
 
 Package: sagitta-xdm-conf
 Architecture: amd64
-Depends: ${misc:Depends}, xdm, feh, od6config
+Depends: ${misc:Depends}, xdm, feh
+Recommends: od6config
 Description: xdm configuration for AMD-based compute nodes
  xdm configuration for AMD-based compute nodes
