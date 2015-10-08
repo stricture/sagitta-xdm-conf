@@ -2,6 +2,6 @@
 
 
 if [ remove = "$1" -o abort-install = "$1" -o disappear = "$1" ]; then
-    dpkg-divert --rename --remove /etc/X11/xdm/Xsetup
-    dpkg-divert --rename --remove /etc/X11/xdm/Xresources
+    dpkg-divert --package sagitta-xdm-conf --remove --rename --divert /etc/X11/xdm/Xsetup.distrib /etc/X11/xdm/Xsetup
+    dpkg-divert --package sagitta-xdm-conf --remove --rename --divert /etc/X11/xdm/Xresources.distrib /etc/X11/xdm/Xresources
 fi

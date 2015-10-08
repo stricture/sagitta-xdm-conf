@@ -1,10 +1,11 @@
 sagitta-xdm-conf (1.8.0-0sagitta1) precise; urgency=low
 
   * fix dependencies
+  * fix diverts
   * update wallpaper
   * re-organize Xsetup
 
- -- epixoip <epixoip@token>  Wed, 07 Oct 2015 21:58:37 -0700
+ -- epixoip <jgosney@stricture-group.com>  Wed, 07 Oct 2015 21:58:37 -0700
 
 sagitta-xdm-conf (1.3.0-1sagitta1) precise; urgency=low
 
@@ -12,34 +13,34 @@ sagitta-xdm-conf (1.3.0-1sagitta1) precise; urgency=low
   * Nvidia broke our fan control :(
   * Bump up Nvidia's clocks a smidge
 
- -- epixoip <epixoip@token>  Wed, 30 Sep 2015 16:50:12 -0700
+ -- epixoip <jgosney@stricture-group.com>  Wed, 30 Sep 2015 16:50:12 -0700
 
 sagitta-xdm-conf (1.3.0-0sagitta1) precise; urgency=low
 
   * add nvidia support
 
- -- epixoip <epixoip@token>  Mon, 26 Jan 2015 22:55:29 -0800
+ -- epixoip <jgosney@stricture-group.com>  Mon, 26 Jan 2015 22:55:29 -0800
 
 sagitta-xdm-conf (1.0.1-1sagitta1) precise; urgency=low
 
   * fix dpkg-divert & initctl 
 
- -- epixoip <epixoip@token>  Thu, 09 Oct 2014 08:41:29 -0700
+ -- epixoip <jgosney@stricture-group.com>  Thu, 09 Oct 2014 08:41:29 -0700
 
 sagitta-xdm-conf (1.0.0-2sagitta1) precise; urgency=low
 
   * change od6config defaults
   * re/start agent when x11 starts
 
- -- epixoip <epixoip@token>  Wed, 08 Oct 2014 01:57:51 -0700
+ -- epixoip <jgosney@stricture-group.com>  Wed, 08 Oct 2014 01:57:51 -0700
 
 sagitta-xdm-conf (1.0.0-1sagitta1) precise; urgency=low
 
   * add xdm init script w/ initctl 
 
- -- epixoip <epixoip@token>  Tue, 07 Oct 2014 07:28:12 -0700
+ -- epixoip <jgosney@stricture-group.com>  Tue, 07 Oct 2014 07:28:12 -0700
 
-sagitta-xdm-conf (1.0) UNRELEASED; urgency=low
+sagitta-xdm-conf (1.0) precise; urgency=low
 
   * Initial release.
 
