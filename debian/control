@@ -8,6 +8,6 @@ Build-Depends: make
 Package: sagitta-xdm-conf
 Architecture: amd64
 Depends: ${misc:Depends}, xdm, feh
-Recommends: od6config
-Description: xdm configuration for AMD-based compute nodes
- xdm configuration for AMD-based compute nodes
+Recommends: od6config || nvidia-settings
+Description: xdm configuration files for GPU compute nodes 
+ Sagitta's xdm configuration files for GPU compute nodes

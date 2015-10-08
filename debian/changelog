@@ -1,3 +1,19 @@
+sagitta-xdm-conf (1.8.0-0sagitta1) precise; urgency=low
+
+  * fix dependencies
+  * update wallpaper
+  * re-organize Xsetup
+
+ -- epixoip <epixoip@token>  Wed, 07 Oct 2015 21:58:37 -0700
+
+sagitta-xdm-conf (1.3.0-1sagitta1) precise; urgency=low
+
+  * Save AMD motherboards
+  * Nvidia broke our fan control :(
+  * Bump up Nvidia's clocks a smidge
+
+ -- epixoip <epixoip@token>  Wed, 30 Sep 2015 16:50:12 -0700
+
 sagitta-xdm-conf (1.3.0-0sagitta1) precise; urgency=low
 
   * add nvidia support
