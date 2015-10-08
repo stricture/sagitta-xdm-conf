@@ -4,7 +4,7 @@
 # All rights reserved.
 # This script is run as root.
 
-export PATH=/bin:/usr/bin
+export PATH=/bin:/usr/bin:/sbin
 export HOME=/root
 export DISPLAY=:0
 
