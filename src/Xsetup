@@ -22,8 +22,7 @@ elif test -x /usr/bin/nvidia-settings; then
     nvidia-settings -a GPUPowerMizerMode=1                  \
                     -a GPUFanControlState=1                 \
                     -a GPUTargetFanSpeed=100                \
-                    -a GPUGraphicsClockOffset[3]=200        \
-                    -a GPUMemoryTransferRateOffset[3]=100
+                    -a GPUGraphicsClockOffset[3]=150
 fi
 
 if test -x /opt/hashstack/agent/hashstack-agent.bin; then
