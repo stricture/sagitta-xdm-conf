@@ -1,31 +1,27 @@
-#!/bin/sh
-#
-# Copyright 2014 by Stricture Consulting Group LLC.
-# All rights reserved.
-# This script is run as root.
+ #!/bin/sh
+ # Copyright 2014 by Terahash LLC.
+ # All rights reserved.
 
-export PATH=/bin:/usr/bin:/sbin
-export HOME=/root
-export DISPLAY=:0
+ export PATH=/bin:/usr/bin:/sbin
+ export HOME=/root
+ export DISPLAY=:0
 
-xset -dpms
-xset s off
-xhost +
+ xset -dpms
+ xset s off
+ xhost +
 
-feh --bg-scale /usr/share/images/xdm-background.png
+ if test -x /usr/bin/nvidia-settings; then
+     nvidia-settings -a GPUPowerMizerMode=1           \
+                     -a GPUFanControlState=1          \
+                     -a GPUTargetFanSpeed=100         \
+                     -a GPUGraphicsClockOffset[3]=150
+ fi
 
-if test -x /usr/bin/od6config; then
-    # mild underclock on AMD -- 290X is a motherboard killer.
-    od6config --set core=925,mem=1200,power=0,temp=95,fan=100
-elif test -x /usr/bin/nvidia-settings; then
-    # moderate overclock on Nvidia (aggressive with SC cards.)
-    nvidia-settings -a GPUPowerMizerMode=1                  \
-                    -a GPUFanControlState=1                 \
-                    -a GPUTargetFanSpeed=100                \
-                    -a GPUGraphicsClockOffset[3]=150
-fi
-
-if test -x /opt/hashstack/agent/hashstack-agent.bin; then
-    start hashstack-agent || restart hashstack-agent
-fi
-
+ if test -x /opt/hashstack-agent-ng/hashstack-agent-ng; then
+     if test -x /opt/hashstack/server/hashstack-server; then
+         start hashstack-server || restart hashstack-server
+         sleep 5
+     fi
+     start hashstack-agent || restart hashstack-agent
+ fi
+ EOF
